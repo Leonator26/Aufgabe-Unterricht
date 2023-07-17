@@ -5,13 +5,13 @@ public class TicTacToeBrett {
     if (x < 1 || x > 3 || y < 1 || y > 3) {
       return;
     }
-    tabelle[x * 3 + y] = wert;
+    tabelle[(x-1) * 3 + (y-1)] = wert;
   }
   
   public String getFigur(int x, int y) {
     if (x < 0 || x > 2 || y < 0 || y > 2) {
       return null;
     }
-    return tabelle[x * 3 + y];
+    return tabelle[(x-1) * 3 + (y-1)];
   }
 }
